@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - Organize Your Tasks</title>
      <link rel="stylesheet" href="style.css" />
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
     <!-- top section -->
-    <section class="hero-section ">
+    <section class="hero-section " data-aos="fade-up">
         <div class="container hero-content flex ">
           <h1>TaskFlow</h1>
         <p class="small-bold-text">Stay focused, stay organized — all in one simple app.</p>
@@ -18,7 +20,7 @@
     </section>
 
     <!-- features section  -->
-     <section class="features-section ">
+     <section class="features-section" data-aos="fade-right">
        <div class="container">
          <h2>Why TaskFlow</h2>
            <div class="feature-container flex">
@@ -48,7 +50,7 @@
 
 
      <!-- reviews section  -->
-      <section class="reviews-section ">
+      <section class="reviews-section" data-aos="fade-left">
         <div class="container">
              <h2>What Users Say</h2>
       <blockquote>“TaskFlow helped me get my life together. It's amazing!” — Sarah M.</blockquote>
@@ -60,7 +62,7 @@
       </section>
 
       <!-- pricing section  -->
-       <section class="pricing ">
+       <section class="pricing " data-aos="fade-up">
            <h2>Choose Your Plan</h2>
         <div class="container pricing-container flex">
             <div class="plan flex">
@@ -99,7 +101,7 @@
        </section>
 
        <!-- footer section -->
-        <footer class="footer-section ">
+        <footer class="footer-section" data-aos="zoom-in">
             <div class="container footer-container flex">
             <p>Contact: support@taskflow.com</p>
             <div class="socials">
@@ -112,5 +114,13 @@
         </footer>
     
         <script src="https://kit.fontawesome.com/be39ff775d.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 2000, // animation duration in milliseconds
+            once: true,     // animate only once
+          });
+        </script>
 </body>
 </html>
